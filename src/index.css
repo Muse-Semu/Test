@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar-track {
+  /* Change the background color */
+  background-color: #e20e0e;
+}
+
+/* Select the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  /* Change the background color */
+  background-color: #00065c;
+
+  /* Change the size of the thumb */
+  height: 30px;
+  width: 30px;
+}
+
+*{
+  scroll-behavior: smooth
+}
+
+.leaflet-container {
+  width: 550px;
+  height: 450px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply w-72 cursor-pointer border-b-4 rounded-md bg-gradient-to-t from-white/25 h-44 text-center self-end;
+}
+
